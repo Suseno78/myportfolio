@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0a1a"/>
+      <stop offset="100%" style="stop-color:#0a1a2e"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg3)"/>
+  <!-- Parallax layers -->
+  <rect x="60" y="140" width="680" height="260" rx="8" fill="#ffffff03" stroke="#ffffff06" stroke-width="1"/>
+  <!-- Large text block (hero) -->
+  <rect x="120" y="80" width="320" height="40" rx="6" fill="url(#accent3)" opacity="0.5"/>
+  <rect x="120" y="130" width="240" height="14" rx="3" fill="#ffffff12"/>
+  <!-- Floating elements -->
+  <rect x="500" y="100" width="200" height="140" rx="12" fill="#ffffff04" stroke="#ffffff06" stroke-width="1" transform="rotate(3 600 170)"/>
+  <rect x="520" y="120" width="100" height="10" rx="2" fill="#06b6d420"/>
+  <rect x="520" y="140" width="160" height="8" rx="2" fill="#ffffff10"/>
+  <rect x="520" y="155" width="140" height="8" rx="2" fill="#ffffff08"/>
+  <!-- Marquee lines -->
+  <rect x="0" y="300" width="800" height="30" fill="#ffffff02"/>
+  <rect x="30" y="308" width="80" height="14" rx="3" fill="#ffffff08"/>
+  <rect x="140" y="308" width="100" height="14" rx="3" fill="#ffffff06"/>
+  <rect x="270" y="308" width="70" height="14" rx="3" fill="#ffffff08"/>
+  <rect x="370" y="308" width="90" height="14" rx="3" fill="#ffffff06"/>
+  <rect x="490" y="308" width="110" height="14" rx="3" fill="#ffffff08"/>
+  <rect x="630" y="308" width="80" height="14" rx="3" fill="#ffffff06"/>
+  <!-- Bottom cards -->
+  <rect x="100" y="360" width="170" height="100" rx="8" fill="#ffffff04" stroke="#ffffff06" stroke-width="1"/>
+  <rect x="300" y="360" width="170" height="100" rx="8" fill="#ffffff04" stroke="#ffffff06" stroke-width="1"/>
+  <rect x="500" y="360" width="170" height="100" rx="8" fill="#ffffff04" stroke="#ffffff06" stroke-width="1"/>
+  <!-- Glow -->
+  <circle cx="400" cy="250" r="250" fill="#06b6d4" opacity="0.02"/>
+  <circle cx="300" cy="150" r="100" fill="#3b82f6" opacity="0.04"/>
+</svg>
