@@ -94,7 +94,7 @@ export default function Footer() {
             {/* Column 1: Brand */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-cyan-500">
-                WS
+                CS
               </h3>
               <p className="text-zinc-500 dark:text-zinc-500 text-sm leading-relaxed">
                 Building digital experiences<br />with passion and purpose.
@@ -144,7 +144,7 @@ export default function Footer() {
                 Feel free to reach out for collaboration or just a friendly hello!
               </p>
               <a
-                href="mailto:hello@caksenz.dev"
+                href={`mailto:${siteConfig.email}`}
                 className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white hover:opacity-90 transition-opacity"
               >
                 Say Hello

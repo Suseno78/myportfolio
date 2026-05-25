@@ -23,9 +23,9 @@ export default function AboutSection() {
 
         <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-14 items-center">
           <ScrollReveal className="md:col-span-2" delay={0.1}>
-            <TiltedCard className="rounded-3xl max-w-[320px] mx-auto" tiltAmount={10} scaleOnHover={1.04}>
-              <div className="relative rounded-3xl overflow-hidden border-2 border-zinc-200 dark:border-zinc-800 shadow-2xl shadow-violet-500/5">
-                <Image src="/myfoto.jpeg" alt="Wahyu Hari Suseno" width={400} height={500} className="w-full h-auto object-cover" priority />
+            <TiltedCard className="rounded-3xl max-w-[250px] mx-auto" tiltAmount={10} scaleOnHover={1.04}>
+              <div className="relative rounded-3xl overflow-hidden border-2 border-zinc-200 dark:border-zinc-800 shadow-2xl shadow-violet-500/5 aspect-[4/5]">
+                <Image src="/senz.jpg" alt="Wahyu Hari Suseno" fill className="object-cover object-[center_70%]" priority sizes="250px" />
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white dark:from-zinc-950 to-transparent" />
               </div>
             </TiltedCard>

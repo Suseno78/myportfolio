@@ -48,7 +48,7 @@ export default function ContactSection() {
       <div className="max-w-3xl mx-auto text-center">
         <ScrollReveal>
           <div className="flex items-center justify-center gap-4 mb-6">
-            <span className="text-sm font-mono text-violet-600 dark:text-violet-400 tracking-widest">04</span>
+            <span className="text-sm font-mono text-violet-600 dark:text-violet-400 tracking-widest">06</span>
             <div className="h-px flex-1 max-w-[60px] bg-gradient-to-r from-violet-500/50 to-transparent" />
             <span className="text-sm text-zinc-600 dark:text-zinc-500 tracking-[0.2em] uppercase">Contact</span>
           </div>

@@ -12,28 +12,24 @@ export default function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const handleViewDetail = useCallback((project: Project) => {
-    if (project.liveUrl) {
-      window.open(project.liveUrl, '_blank');
-    } else {
-      setSelectedProject(project);
-    }
+    setSelectedProject(project);
   }, []);
 
   const closeModal = useCallback(() => {
     setSelectedProject(null);
   }, []);
 
-  // Split into 3 rows: 3-3-2
+  // Split into 3 rows: 3-3-3
   const row1 = projects.slice(0, 3);
   const row2 = projects.slice(3, 6);
-  const row3 = projects.slice(6, 8);
+  const row3 = projects.slice(6, 9);
 
   return (
     <section id="projects" className="relative py-28 md:py-36 px-6">
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-6">
-            <span className="text-sm font-mono text-violet-600 dark:text-violet-400 tracking-widest">03</span>
+            <span className="text-sm font-mono text-violet-600 dark:text-violet-400 tracking-widest">04</span>
             <div className="h-px flex-1 max-w-[60px] bg-gradient-to-r from-violet-500/50 to-transparent" />
             <span className="text-sm text-zinc-600 dark:text-zinc-500 tracking-[0.2em] uppercase">Projects</span>
           </div>
@@ -80,9 +76,9 @@ export default function ProjectsSection() {
           ))}
         </ScrollRevealGroup>
 
-        {/* Row 3: 2 projects centered */}
+        {/* Row 3: 3 projects */}
         <ScrollRevealGroup
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4"
           staggerDelay={0.08}
         >
           {row3.map((project, i) => (
@@ -175,13 +171,25 @@ function BentoCard({
         </div>
 
         {/* Buttons */}
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <button
             onClick={() => onViewDetail(project)}
             className="px-4 py-2 text-xs font-semibold rounded-xl bg-gradient-to-r from-violet-600 to-cyan-600 text-white hover:opacity-90 transition-opacity cursor-pointer"
           >
             View Detail
           </button>
+
+          {project.link && project.link !== '' && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-xs font-semibold rounded-xl bg-zinc-800 dark:bg-zinc-700 text-white hover:bg-zinc-700 dark:hover:bg-zinc-600 transition-colors cursor-pointer shadow-[0_0_15px_rgba(16,185,129,0.15)] dark:shadow-[0_0_15px_rgba(16,185,129,0.1)] border border-emerald-500/20"
+            >
+              Demo
+            </a>
+          )}
+          
           {project.github && (
             <a
               href={project.github}

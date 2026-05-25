@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     description: "Creative developer crafting digital experiences that push the boundaries of web technology.",
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
