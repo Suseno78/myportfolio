@@ -16,20 +16,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Cak Senz — Creative Developer Portfolio",
+  title: "Cak Senz",
   description:
     "Creative developer crafting digital experiences that push the boundaries of web technology. Specializing in interactive interfaces, motion design, and full-stack development.",
   keywords: ["portfolio", "developer", "creative", "web development", "react", "next.js", "frontend"],
   authors: [{ name: "Cak Senz" }],
   openGraph: {
-    title: "Cak Senz — Creative Developer Portfolio",
+    title: "Cak Senz",
     description: "Creative developer crafting digital experiences that push the boundaries of web technology.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cak Senz — Creative Developer Portfolio",
+    title: "Cak Senz",
     description: "Creative developer crafting digital experiences that push the boundaries of web technology.",
   },
   robots: { index: true, follow: true },
