@@ -25,7 +25,7 @@ export default function AboutSection() {
           <ScrollReveal className="md:col-span-2" delay={0.1}>
             <TiltedCard className="rounded-3xl max-w-[250px] mx-auto" tiltAmount={10} scaleOnHover={1.04}>
               <div className="relative rounded-3xl overflow-hidden border-2 border-zinc-200 dark:border-zinc-800 shadow-2xl shadow-violet-500/5 aspect-[4/5]">
-                <Image src="/senz.jpg" alt="Wahyu Hari Suseno" fill className="object-cover object-[center_70%]" priority sizes="250px" />
+                <Image src="/senz_mobil2.png" alt="Wahyu Hari Suseno" fill className="object-cover object-[center_70%]" priority sizes="250px" />
                 <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white dark:from-zinc-950 to-transparent" />
               </div>
             </TiltedCard>

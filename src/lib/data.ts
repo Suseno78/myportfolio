@@ -190,7 +190,7 @@ export const projects: Project[] = [
 export const socialLinks: SocialLink[] = [
   { name: 'Email', url: 'mailto:wharisuseno2007@gmail.com', icon: 'email' },
   { name: 'GitHub', url: 'https://github.com/Suseno78', icon: 'github' },
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/caksenz', icon: 'linkedin' },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/wahyu-hari-suseno-23b147412', icon: 'linkedin' },
   { name: 'Instagram', url: 'https://instagram.com/cak_senzzz', icon: 'instagram' },
 ];
 
